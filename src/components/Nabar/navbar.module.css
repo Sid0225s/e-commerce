@@ -1,0 +1,227 @@
+.top {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  padding: 0.7rem;
+  align-items: center;
+  position: relative;
+}
+.left {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 3rem;
+}
+.right {
+  display: flex;
+}
+.right div {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.right div span {
+  margin: 0 0.7rem;
+}
+.line {
+  height: 1px;
+  background-color: black;
+}
+.search {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 15fr 1fr;
+  border: 2px solid #fed700;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 2rem;
+}
+.search input {
+  border: 0px;
+  margin-left: 1.5rem;
+  font-weight: 300;
+  outline: 0px;
+  border-radius: 1rem;
+  font-size: 1.1rem;
+}
+.search div {
+  background: #fed700;
+  height: 2.5rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+.search svg {
+  font-size: 1.5rem;
+}
+.down {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+.down img {
+  width: 10rem;
+}
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.electro {
+  display: flex;
+  justify-content: center;
+}
+.logos svg {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.logos p {
+  font-size: 1.1rem;
+  font-weight: 900;
+  margin-left: -15px;
+  color: rgb(83, 74, 74);
+}
+.searchmain {
+  display: flex;
+  align-items: center;
+}
+.ham svg {
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-right: 2rem;
+}
+.downmost {
+  display: grid;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  grid-template-columns: 6fr 2fr;
+}
+.allpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(203, 21, 21);
+}
+.allpage svg {
+  font-size: 1.4rem;
+}
+.downclas {
+  display: flex;
+  justify-content: center;
+}
+.downclas div {
+  margin: 0 0.7rem;
+}
+.doller {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  position: absolute;
+  left: 2rem;
+  top: 9rem;
+  flex-direction: column;
+  justify-content: center;
+  width: 16%;
+  background-color: white;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+.card div {
+  margin: 0.2rem 0 0.2rem 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.card div svg {
+  position: absolute;
+  right: 5%;
+}
+.card div:hover {
+  background-color: rgb(230, 218, 218);
+}
+.cardicon {
+  display: flex;
+  align-items: center;
+  background-color: #fed700;
+  height: 3rem;
+  justify-content: center;
+}
+.downline {
+  display: flex;
+  height: 0.6px;
+  background-color: rgb(219, 212, 212);
+  width: 90%;
+}
+.ham1 {
+  display: none;
+}
+.block {
+  display: none;
+}
+@media (max-width: 1320px) {
+  .top {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+@media (max-width: 1250px) {
+  .card {
+    display: none;
+  }
+}
+@media (max-width: 1150px) {
+  .downmost {
+    display: none;
+  }
+  .top {
+    display: none;
+  }
+  .searchmain form {
+    display: none;
+  }
+  .down {
+    background-color: #fed700;
+    grid-template-columns: 0.7fr 5fr 0fr 20fr;
+    padding: 0.3rem 0;
+  }
+  .logos {
+    justify-content: end;
+    margin-right: 1rem;
+  }
+  .none {
+    display: none;
+  }
+  .ham {
+    display: none;
+  }
+  .block {
+    display: block;
+  }
+  .ham1 {
+    display: block;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .logos svg {
+    margin: 0 0.4rem;
+  }
+  .logos p {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .logos svg {
+    font-size: 1.3rem;
+  }
+  .ham1 {
+    font-size: 1.8rem;
+  }
+  .down img {
+    width: 8rem;
+  }
+}
