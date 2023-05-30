@@ -1,0 +1,21 @@
+.carousal1 {
+  margin: 3rem 5%;
+  border-top: 1px solid rgb(164, 156, 156);
+  border-bottom: 1px solid rgb(164, 156, 156);
+}
+.react-multi-carousel-item--active {
+  width: 270px;
+}
+.react-multi-carousel-item {
+  width: 270px;
+}
+.carousal1 li {
+  display: flex;
+  justify-content: center;
+}
+.carousal1 img {
+  cursor: pointer;
+}
+.carousal1 img:hover {
+  filter: brightness(70%);
+}

@@ -30,7 +30,8 @@ function Carousal() {
   return (
     <div className={styles.carousal}>
       <Carousel
-        autoPlay={false}
+        swipeable={false}
+        autoPlay={true}
         arrows={false}
         showDots={true}
         responsive={responsive}
