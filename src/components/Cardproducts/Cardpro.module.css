@@ -1,0 +1,151 @@
+.console {
+  border: 2px solid #fed700;
+  border-radius: 1.3rem;
+  margin: 0 2rem;
+  height: 73%;
+}
+.console div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.console h1 {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(83, 83, 83);
+}
+.console h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0062bd;
+  cursor: pointer;
+}
+.console h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.cardpro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.rightbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.right nav {
+  display: flex;
+  justify-content: center;
+}
+.right nav li {
+  list-style: none;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  color: rgb(114, 110, 110);
+}
+.line {
+  background-color: rgb(196, 193, 193);
+  height: 0.5px;
+}
+.card {
+  width: 100%;
+
+  background-color: white;
+}
+.card img {
+  width: 70%;
+}
+.card h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0062bd;
+  margin-top: -30px;
+  margin-left: 1rem;
+}
+.card h6 {
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: rgb(182, 179, 179);
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+.arrow svg {
+  margin-left: 50%;
+  font-size: 1.4rem;
+  color: rgb(219, 214, 214);
+}
+.bot {
+  display: flex;
+  justify-content: center;
+}
+.active {
+  font-weight: 600;
+  border-bottom: 2px solid #fed700;
+}
+.bot div {
+  margin: 0 1rem;
+  color: rgb(104, 102, 102);
+  display: none;
+}
+.line2 {
+  background-color: rgb(196, 193, 193);
+  height: 0.5px;
+  width: 95%;
+  display: none;
+}
+.card:hover .bot div {
+  display: block;
+  display: flex;
+  align-items: center;
+}
+.card:hover .line2 {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.card:hover {
+  border: 0.2px solid rgb(180, 176, 176);
+  transform: scale(1.02);
+  box-shadow: 5px 4px 3px 1px rgb(141, 139, 139);
+}
+.card:hover .arrow svg {
+  color: #fed700;
+}
+@media (max-width: 1100px) {
+  .rightbox {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .console {
+    height: 38rem;
+    margin: 0 1rem;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 1000px) {
+  .arrow svg {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .cardpro {
+    grid-template-columns: 1fr;
+  }
+  .right nav {
+    margin-top: 2rem;
+  }
+  .rightbox {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-left: 1rem;
+  }
+  .card {
+    border: 1px solid rgb(145, 140, 140);
+  }
+}
